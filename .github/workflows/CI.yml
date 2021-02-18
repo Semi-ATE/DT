@@ -16,11 +16,9 @@ jobs:
         run: |
           pip install -r requirements/run.txt
           pip install -r requirements/test.txt
-#      - name: Show environment
-#        run: pip list
       - name: Run tests
         run: |
-          pytest tests/ --cov=STDF
+          pytest tests/ --cov=DT
       - name: Check package
         run: |
           python setup.py sdist
@@ -41,11 +39,8 @@ jobs:
         run: |
           pip install -r requirements/run.txt
           pip install -r requirements/test.txt
-#      - name: Show environment
-#        run: pip list
       - name: Run tests
-        run: |
-          pytest tests/ --cov=STDF
+        run: pytest tests/ --cov=Semi_ATE
       - name: Check package
         run: |
           python setup.py sdist
