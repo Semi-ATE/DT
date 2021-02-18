@@ -5,7 +5,7 @@ Created on Jun 14, 2014
 
 This Library implements Date and Time manipulations in a convenient way.
 
-License : GPL
+License : MIT
 """
 import datetime
 import os
