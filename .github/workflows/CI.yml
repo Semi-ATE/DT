@@ -17,15 +17,13 @@ jobs:
           pip install -r requirements/run.txt
           pip install -r requirements/test.txt
       - name: Run tests
-        run: |
-          pytest tests/ --cov=DT
+        run: pytest tests/ --cov=Semi_ATE
+      - name: Create package
+        run: python setup.py sdist
       - name: Check package
-        run: |
-          python setup.py sdist
-          twine check dist/*
+        run: twine check dist/*
       - name: Check manifest 
-        run: |
-          check-manifest
+        run: check-manifest
   test-windows:
     runs-on: windows-latest
     steps:
@@ -41,10 +39,9 @@ jobs:
           pip install -r requirements/test.txt
       - name: Run tests
         run: pytest tests/ --cov=Semi_ATE
+      - name: Create package
+        run: python setup.py sdist
       - name: Check package
-        run: |
-          python setup.py sdist
-          twine check dist/*
+        run: twine check dist/*
       - name: Check manifest 
-        run: |
-          check-manifest
+        run: check-manifest
