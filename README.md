@@ -1,16 +1,16 @@
 # Semi-ATE's Date & Time library
 
-[![GitHub](https://img.shields.io/github/license/Semi-ATE/STDF?color=black)](https://github.com/Semi-ATE/STDF/blob/main/LICENSE)
-[![Conda](https://img.shields.io/conda/pn/conda-forge/Semi-ATE-STDF?color=black)](https://anaconda.org/conda-forge/Semi-ATE-STDF)
+[![GitHub](https://img.shields.io/github/license/Semi-ATE/DT?color=black)](https://github.com/Semi-ATE/DT/blob/main/LICENSE)
+[![Conda](https://img.shields.io/conda/pn/conda-forge/Semi-ATE-DT?color=black)](https://anaconda.org/conda-forge/Semi-ATE-DT)
 ![Supported Python versions](https://img.shields.io/badge/python-%3E%3D3.7-black)
 
-[![CI](https://github.com/Semi-ATE/STDF/workflows/CI/badge.svg?branch=main)](https://github.com/Semi-ATE/STDF/actions?query=workflow%3ACI)
-[![codecov](https://codecov.io/gh/Semi-ATE/STDF/branch/main/graph/badge.svg?token=BAP0H9OMED)](https://codecov.io/gh/Semi-ATE/STDF)
-[![CD](https://github.com/Semi-ATE/STDF/workflows/CD/badge.svg)](https://github.com/Semi-ATE/STDF/actions?query=workflow%3ACD)
+[![CI](https://github.com/Semi-ATE/DT/workflows/CI/badge.svg?branch=main)](https://github.com/Semi-ATE/DT/actions?query=workflow%3ACI)
+[![codecov](https://codecov.io/gh/Semi-ATE/DT/branch/main/graph/badge.svg?token=BAP0H9OMED)](https://codecov.io/gh/Semi-ATE/DT)
+[![CD](https://github.com/Semi-ATE/DT/workflows/CD/badge.svg)](https://github.com/Semi-ATE/DT/actions?query=workflow%3ACD)
 
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Semi-ATE/STDF?color=blue&label=GitHub&sort=semver)](https://github.com/Semi-ATE/STDF/releases/latest)
-[![PyPI](https://img.shields.io/pypi/v/Semi-ATE-STDF?color=blue&label=PyPI)](https://pypi.org/project/Semi-ATE-STDF/)
-![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/Semi-ATE-STDF?color=blue&label=conda-forge)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Semi-ATE/DT?color=blue&label=GitHub&sort=semver)](https://github.com/Semi-ATE/DT/releases/latest)
+[![PyPI](https://img.shields.io/pypi/v/Semi-ATE-DT?color=blue&label=PyPI)](https://pypi.org/project/Semi-ATE-DT/)
+![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/Semi-ATE-DT?color=blue&label=conda-forge)
 
 # Installation
 
