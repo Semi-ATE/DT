@@ -12,7 +12,7 @@
 [![PyPI](https://img.shields.io/pypi/v/Semi-ATE-DT?color=blue&label=PyPI)](https://pypi.org/project/Semi-ATE-DT/)
 ![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/Semi-ATE-DT?color=blue&label=conda-forge)
 
-[![GitHub issues](https://img.shields.io/github/issues-raw/Semi-ATE/DT)](https://github.com/Semi-ATE/DT/issues)
+[![GitHub issues](https://img.shields.io/github/issues/Semi-ATE/DT)](https://github.com/Semi-ATE/DT/issues)
 
 # Installation
 
