@@ -14,6 +14,10 @@
 
 [![GitHub issues](https://img.shields.io/github/issues/Semi-ATE/DT)](https://github.com/Semi-ATE/DT/issues)
 
+
+
+
+
 # Installation
 
 ## Stand alone
@@ -44,28 +48,82 @@ $ conda install Semi-ATE
 $ pip install Semi-ATE
 ```
 
-# Usage examples
+# Usage & examples
+
+## The DT object
+
+The DT (Date and Time) is used to navigate the calendar
 
 ```python
-from Semi_ATE.DT import DT, TD
+Python 3.8.6 | packaged by conda-forge | (default, Jan 25 2021, 23:21:18) 
+Type "copyright", "credits" or "license" for more information.
 
-now = DT()
-print(f"UTC time = {now}")
-print(f"local time = {DT(now.local()}")
-print(f"timezone = {now.tz}")  
-print(f"daylight savings time = {now.dst}")
-bow = DT(now.bow())
-print(f"begin of week = {bow}")
-eow = DT(now.eow()
-print(f"end of week = {eow}")
-bod = DT(now.bod())
-print(f"begin of day = {bod}")
-eod = DT(now.eod()
-print(f"end of day = {eod}")
+IPython 7.20.0 -- An enhanced Interactive Python.
 
+In [1]: from Semi_ATE.TnD import DT
 
+In [2]: now = DT()
+
+In [3]: print(now)
+Friday, February 19 2021 @ 10:28:07 (Q1 21075)
+
+```
+### DT initialization & call
+
+### DT attributes
+
+### DT methodes
+
+## The TD object 
+
+The TD (Time Difference) is the result of the substraction of two DT objects.
+
+```python
+Python 3.8.6 | packaged by conda-forge | (default, Jan 25 2021, 23:21:18) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 7.20.0 -- An enhanced Interactive Python.
+
+In [1]: from Semi_ATE.TnD import DT, TD
+
+In [2]: now = DT()
+
+In [3]: my_birth_day = DT("01101982")
+
+In [4]: my_age = now - my_birth_day
+
+In [5]: print(my_age)
+38 years 4 months 4 weeks 1 day 18 hours 28 minutes 7 seconds
 
 ```
 
+## Chronometer
 
 
+
+## Interact with Qt
+
+It was elected not to incorporate the binding to Qt in this library, so that we can also work with this library without the precense of Qt.
+It is however easy enough to bind the two as shown below
+
+```python
+Python 3.8.6 | packaged by conda-forge | (default, Jan 25 2021, 23:21:18) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 7.20.0 -- An enhanced Interactive Python.
+
+In [1]: from Semi_ATE.TnD import DT
+
+In [2]: from PyQt5.QtCore import QDateTime
+
+In [3]: here_and_now = DT()
+
+In [4]: QtHereAndNow = QDateTime()
+
+In [5]: QtHereAndNow.setOffsetFromUtc(here_and_now.utc_offset)  # account for timezone + day light saving
+
+In [6]: QtHereAndNow.setSecsSinceEpoch(here_and_now.epoch)
+
+```
+
+from QDateTime you can go to QDate and QTime if you so desire, or you do something similar as above.
