@@ -52,7 +52,7 @@ $ pip install Semi-ATE
 
 ## The DT object
 
-The DT (Date and Time) is used to navigate the calendar
+The DT (Date and Time) object is used to navigate the calendar, determine kalendar-Week/Quarter/DateCode/...
 
 ```python
 Python 3.8.6 | packaged by conda-forge | (default, Jan 25 2021, 23:21:18) 
@@ -66,6 +66,9 @@ In [2]: now = DT()
 
 In [3]: print(now)
 Friday, February 19 2021 @ 10:28:07 (Q1 21075)
+
+In [4]: print(f"We are now in KW{now.KW} Q{now.quarter}/{now.year} and the DateCode is '{now.datecode}'")
+We are now in KW7 Q1/2021 and the DateCode is '21075'
 
 ```
 ### DT initialization & call
