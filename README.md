@@ -54,7 +54,7 @@ $ pip install Semi-ATE
 
 The DT (Date and Time) object is used to navigate the calendar, determine kalendar-Week/Quarter/DateCode/...
 
-```python
+```
 Python 3.8.6 | packaged by conda-forge | (default, Jan 25 2021, 23:21:18) 
 Type "copyright", "credits" or "license" for more information.
 
