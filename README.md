@@ -74,11 +74,11 @@ Friday, February 19 2021 @ 10:28:07 (Q1 21075)
 
 ### DT methodes
 
-### notes on negative epoch 
+### note: negative epoch 
 
 The epoch (1 January 1970 00:00:00 UTC) is basically just a `marker` from where to count the number of seconds from.
 
-If one wants to reference a date/time before the epoch, one uses negative epoch numbers. This works fine on Linux (and MacOS?) but as usual Windows has another oppinion, so negative epoch times can't be used on Windows machines. :unamused:
+If one wants to reference a point in time before the epoch, one uses negative epoch numbers. This works fine on Linux (and MacOS?) but as usual Windows has another oppinion, so negative epoch times can't be used on Windows machines. :unamused:
 
 ## The TD object 
 
