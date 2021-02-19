@@ -2,7 +2,7 @@
 import io
 
 from setuptools import find_packages, setup
-from Semi_ATE.DT import __version__
+from Semi_ATE.TnD import __version__
 
 # =============================================================================
 # Use README.md for long description
