@@ -96,7 +96,7 @@ In [1]: from Semi_ATE.TnD import DT, TD
 
 In [2]: now = DT()
 
-In [3]: my_birth_day = DT("01101982")
+In [3]: my_birth_day = DT("01101982")  # DDMMYYYY
 
 In [4]: my_age = now - my_birth_day
 
