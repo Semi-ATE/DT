@@ -111,7 +111,8 @@ In [5]: print(my_age)
 
 ## Interact with Qt
 
-It was elected not to incorporate the binding to Qt in this library, so that we can also work with this library without the precense of Qt.
+It was elected **not** to incorporate the binding to Qt in this library, so that we can also work with this library without the precense of Qt.
+
 It is however easy enough to bind the two as shown below
 
 ```python
