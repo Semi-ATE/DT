@@ -37,8 +37,8 @@ jobs:
         run: |
           pip install -r requirements/run.txt
           pip install -r requirements/test.txt
-      - name: Run tests
-        run: pytest tests/ --cov=Semi_ATE
+#      - name: Run tests
+#        run: pytest tests/ --cov=Semi_ATE
       - name: Create package
         run: python setup.py sdist
       - name: Check package
