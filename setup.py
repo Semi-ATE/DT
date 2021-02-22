@@ -11,7 +11,7 @@ with io.open("README.md", encoding="utf-8") as f:
     LONG_DESCRIPTION = f.read()
 
 setup(
-    name="Semi-ATE-TnD",
+    name="Semi-ATE-DT",
     version=__version__,
     description="Convenient Date and Time library for python",
     long_description=LONG_DESCRIPTION,
