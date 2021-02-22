@@ -221,8 +221,7 @@ class TD(object):
             retval += " 1 second"
         else:
             retval += f" {int(remainer)} seconds"
-        retval = retval.strip()
-        return retval
+        return retval.strip()
 
 
 class DT(object):
