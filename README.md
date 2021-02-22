@@ -16,6 +16,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/Semi-ATE/DT)](https://github.com/Semi-ATE/DT/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/Semi-ATE/DT)](https://github.com/Semi-ATE/DT/pulls)
 
+A library to easily navigate kalendars and have usefull information like quarter, datecode, kalendar week ...
 
 # Installation
 
