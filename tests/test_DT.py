@@ -184,7 +184,7 @@ def test_bom_eom():
     assert end_of_april.sec == 59
     middle_of_december = DT("14042020")
     end_of_december = DT(middle_of_december.eom())
-    assert end_of_december.mday == 31
+    assert end_of_december.mday == 30
     assert end_of_december.hour == 23
     assert end_of_december.min == 59
     assert end_of_december.sec == 59
