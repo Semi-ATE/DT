@@ -14,6 +14,8 @@
 ![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/Semi-ATE-DT?color=blue&label=conda-forge)
 
 [![GitHub issues](https://img.shields.io/github/issues/Semi-ATE/DT)](https://github.com/Semi-ATE/DT/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/Semi-ATE/DT)](https://github.com/Semi-ATE/DT/pulls)
+
 
 # Installation
 
