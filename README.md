@@ -68,9 +68,11 @@ In [2]: now = DT()
 In [3]: print(now)
 Friday, February 19 2021 @ 10:28:07 (Q1 21075)
 
-In [4]: print(f"We are now in KW{now.KW} Q{now.quarter}/{now.year} and the DateCode is '{now.datecode}'")
-We are now in KW7 Q1/2021 and the DateCode is '21075'
+In [4]: print(f"We are now in KW{now.KW} Q{now.quarter}/{now.year}")
+We are now in KW7 Q1/2021 
 
+In [5]: print(f"Today's DateCode is '{now.datecode}'")
+Today's DateCode is '21075'
 ```
 ### DT initialization & call
 
