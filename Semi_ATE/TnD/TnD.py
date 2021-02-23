@@ -81,15 +81,6 @@ def iso_to_gregorian(iso_year, iso_week, iso_day):
     return year_start + datetime.timedelta(days=iso_day - 1, weeks=iso_week - 1)
 
 
-def url_datetime_string_to_epoch(url_datetime):
-    retval = url_datetime
-    print(retval)
-    retval = retval.split(",")[1].strip()
-    retval = retval.replace("GMT", "").strip()
-    retval = datetime.datetime.strptime(retval, "%d %b %Y %H:%M:%S")
-    return int((retval - datetime.datetime(1970, 1, 1)).total_seconds())
-
-
 def micronas_time_structure_to_epoch(Datum=0, Uhrzeit=0):
     """
     Micronas uses the following legacy structures:
@@ -121,12 +112,6 @@ class DTError(RuntimeError):
 
     def __init__(self, arg):
         self.args = arg
-
-    def __str__(self):
-        return "".join(self.args)
-
-    def __repr__(self):
-        return "".join(self.args)
 
 
 class TD(object):
