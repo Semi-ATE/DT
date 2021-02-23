@@ -1,3 +1,5 @@
+import platform
+
 from Semi_ATE.TnD import DT, DTError
 
 
@@ -10,7 +12,16 @@ def test_init_int_pos():
 
 
 def test_init_int_neg():
-    assert DT(-7948800).epoch == -7948800
+    if platform.system() == "Windows":
+        try:
+            DT(-43201)
+        except DTError:
+            assert True
+        else:
+            assert False
+        assert DT(-43200).epoch == -43200
+    else:
+        assert DT(-7948800).epoch == -7948800
 
 
 def test_init_float_pos():
@@ -18,7 +29,16 @@ def test_init_float_pos():
 
 
 def test_init_float_neg():
-    assert DT(-7948800.663).epoch == -7948800
+    if platform.system() == "Windows":
+        try:
+            DT(-43201.0)
+        except DTError:
+            assert True
+        else:
+            assert False
+        assert DT(-43200.0).epoch == -43200
+    else:
+        assert DT(-7948800.663).epoch == -7948800
 
 
 def test_init_str_datecode_post_epoch():  # YYWWD
@@ -43,7 +63,15 @@ def test_init_str_date_post_epoch():  # DDMMYYYY
 
 
 def test_init_str_date_pre_epoch():
-    assert DT("01101969").date == "01101969"
+    if platform.system() == "Windows":
+        try:
+            DT("01101969")
+        except DTError:
+            assert True
+        else:
+            assert False
+    else:
+       assert DT("01101969").date == "01101969"
 
 
 def test_init_str_invalid():
@@ -236,7 +264,3 @@ def test__ge__():
 
 def test__str__():
     assert True
-
-
-def test_is_date_ok():
-    assert DT("01101969")

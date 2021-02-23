@@ -4,4 +4,3 @@ check-manifest
 pip 
 setuptools 
 twine
-tree

@@ -10,6 +10,7 @@ License : MIT
 import datetime
 import os
 import time
+import platform
 
 
 def is_date(stamp):
@@ -233,6 +234,7 @@ class DT(object):
         loct = int(time.time())
         self.tz = (time.mktime(time.gmtime(loct)) - loct) / 3600
         self.dst = time.localtime()[8]
+        self.os = platform.system()
         self.__call__(stamp)
 
     def __call__(self, stamp=None):
@@ -276,6 +278,8 @@ class DT(object):
         self._populate()
 
     def _populate(self):
+        if self.os == "Windows" and self.epoch < -43200:
+            raise DTError("Windows doesn't support negative epoch times beyond -43200 (12 hours prior)")
         t = time.gmtime(self.epoch)
         d = datetime.date(t.tm_year, t.tm_mon, t.tm_mday)
         self.datecode = "%4d%02d%1d" % (
