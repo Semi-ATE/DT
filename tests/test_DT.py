@@ -81,6 +81,13 @@ def test_init_str_invalid():
         assert True
     else:
         assert False
+    
+    try:
+        DT(('fubar',))
+    except DTError:
+        assert True
+    else:
+        assert False
 
 
 def test_populate():
@@ -264,3 +271,4 @@ def test__ge__():
 
 def test__str__():
     assert True
+
