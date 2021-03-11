@@ -10,9 +10,9 @@
 [![CD](https://github.com/Semi-ATE/DT/workflows/CD/badge.svg)](https://github.com/Semi-ATE/DT/actions?query=workflow%3ACD)
 
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Semi-ATE/DT?color=blue&label=GitHub&sort=semver)](https://github.com/Semi-ATE/DT/releases/latest)
+[![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/Semi-ATE/DT/latest)](https://github.com/Semi-ATE/DT)
 [![PyPI](https://img.shields.io/pypi/v/Semi-ATE-DT?color=blue&label=PyPI)](https://pypi.org/project/Semi-ATE-DT/)
 ![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/Semi-ATE-DT?color=blue&label=conda-forge)
-[![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/Semi-ATE/DT/latest)](https://github.com/Semi-ATE/DT)
 
 [![GitHub issues](https://img.shields.io/github/issues/Semi-ATE/DT)](https://github.com/Semi-ATE/DT/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/Semi-ATE/DT)](https://github.com/Semi-ATE/DT/pulls)
