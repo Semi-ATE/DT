@@ -11,7 +11,7 @@ with io.open("README.md", encoding="utf-8") as f:
     LONG_DESCRIPTION = f.read()
 
 setup(
-    name="Semi-ATE-DT",
+    name="Semi-ATE-DnT",
     version=__version__,
     description="Convenient Date and Time library for python",
     long_description=LONG_DESCRIPTION,
@@ -19,7 +19,7 @@ setup(
     author="Tom Hören",
     maintainer="Semi-ATE",
     maintainer_email="info@Semi-ATE.com",
-    url="https://github.com/Semi-ATE/DT",
+    url="https://github.com/Semi-ATE/DnT",
     license="MIT",
     keywords="Semiconductor ATE Automatic Test Equipment Date Time",
     platforms=["Windows", "Linux", "Mac OS-X"],
