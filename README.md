@@ -1,21 +1,21 @@
-# Semi-ATE's Date & Time library
+# Semi-ATE's Time & Date library
 
-[![GitHub](https://img.shields.io/github/license/Semi-ATE/DT?color=black)](https://github.com/Semi-ATE/DT/blob/main/LICENSE)
-[![Conda](https://img.shields.io/conda/pn/conda-forge/Semi-ATE-DT?color=black)](https://anaconda.org/conda-forge/Semi-ATE-DT)
+[![GitHub](https://img.shields.io/github/license/Semi-ATE/TnD?color=black)](https://github.com/Semi-ATE/TnD/blob/main/LICENSE)
+[![Conda](https://img.shields.io/conda/pn/conda-forge/Semi-ATE-TnD?color=black)](https://anaconda.org/conda-forge/Semi-ATE-TnD)
 ![Supported Python versions](https://img.shields.io/badge/python-%3E%3D3.7-black)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
-[![CI](https://github.com/Semi-ATE/DT/workflows/CI/badge.svg?branch=main)](https://github.com/Semi-ATE/DT/actions?query=workflow%3ACI)
-[![codecov](https://codecov.io/gh/Semi-ATE/DT/branch/main/graph/badge.svg?token=BAP0H9OMED)](https://codecov.io/gh/Semi-ATE/DT)
-[![CD](https://github.com/Semi-ATE/DT/workflows/CD/badge.svg)](https://github.com/Semi-ATE/DT/actions?query=workflow%3ACD)
+[![CI](https://github.com/Semi-ATE/TnD/workflows/CI/badge.svg?branch=main)](https://github.com/Semi-ATE/TnD/actions?query=workflow%3ACI)
+[![codecov](https://codecov.io/gh/Semi-ATE/TnD/branch/main/graph/badge.svg?token=BAP0H9OMED)](https://codecov.io/gh/Semi-ATE/TnD)
+[![CD](https://github.com/Semi-ATE/TnD/workflows/CD/badge.svg)](https://github.com/Semi-ATE/TnD/actions?query=workflow%3ACD)
 
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Semi-ATE/DT?color=blue&label=GitHub&sort=semver)](https://github.com/Semi-ATE/DT/releases/latest)
-[![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/Semi-ATE/DT/latest)](https://github.com/Semi-ATE/DT)
-[![PyPI](https://img.shields.io/pypi/v/Semi-ATE-DT?color=blue&label=PyPI)](https://pypi.org/project/Semi-ATE-DT/)
-![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/Semi-ATE-DT?color=blue&label=conda-forge)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Semi-ATE/TnD?color=blue&label=GitHub&sort=semver)](https://github.com/Semi-ATE/TnD/releases/latest)
+[![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/Semi-ATE/TnD/latest)](https://github.com/Semi-ATE/TnD)
+[![PyPI](https://img.shields.io/pypi/v/Semi-ATE-TnD?color=blue&label=PyPI)](https://pypi.org/project/Semi-ATE-TnD/)
+![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/Semi-ATE-TnD?color=blue&label=conda-forge)
 
-[![GitHub issues](https://img.shields.io/github/issues/Semi-ATE/DT)](https://github.com/Semi-ATE/DT/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/Semi-ATE/DT)](https://github.com/Semi-ATE/DT/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/Semi-ATE/TnD)](https://github.com/Semi-ATE/TnD/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/Semi-ATE/TnD)](https://github.com/Semi-ATE/TnD/pulls)
 
 A library to easily navigate kalendars and have usefull information like quarter, datecode, kalendar week ...
 
@@ -26,13 +26,13 @@ A library to easily navigate kalendars and have usefull information like quarter
 ### conda
 
 ```bash
-$ conda install Semi-ATE-DT
+$ conda install Semi-ATE-TnD
 ```
 
 ### pip
 
 ```bash
-$ pip install Semi-ATE-DT
+$ pip install Semi-ATE-TnD
 ```
 
 ## As part of the Semi-ATE suit
@@ -74,6 +74,7 @@ We are now in KW7 Q1/2021
 In [5]: print(f"Today's DateCode is '{now.datecode}'")
 Today's DateCode is '21075'
 ```
+
 ### DT initialization & call
 
 The DT object can be initialized the following ways:
@@ -155,7 +156,7 @@ the DT object has the following methods:
 
 The epoch (1 January 1970 00:00:00 UTC) is basically just a `marker` from where to count the number of seconds from.
 
-If one wants to reference a point in time before the epoch, one uses negative epoch numbers. This works fine on Linux (and MacOS?) but as usual Windows has another oppinion, so negative epoch times can't be used on Windows machines. :unamused:
+If one wants to reference a point in time before the epoch, one uses negative epoch numbers. This works fine on Linux (and MacOS?) but as usual Windows has another opinion, so negative epoch times can't be used on Windows machines. :unamused:
 
 [One of our issues addresses this](https://github.com/Semi-ATE/DT/issues/4), and we'll see if we can fix this :stuck_out_tongue:
 
